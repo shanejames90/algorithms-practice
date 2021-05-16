@@ -1,0 +1,2 @@
+## Algorithms Practice # 
+Within this repo you will find solutions to the various algorithms that I have been practicing in order to learn and sharpen my skills for technical interviewing.  The problems that go along with these solutions come from a variety of sources including: AlgoExpert, and Leetcode.
