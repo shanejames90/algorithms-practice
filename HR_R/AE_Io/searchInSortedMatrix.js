@@ -27,6 +27,33 @@ function searchInSortedMatrix(matrix, target) {
     return [-1, -1]
 }
 
+function searchInSortedMatrix(matrix, target) {
+    let row = 0 
+    let col = matrix[0].length - 1
+    while (row < matrix.length && col >= 0) {
+        if (matrix[row][col] > target) {
+            col--
+        } else if (matrix[row][col] < target) {
+            target++
+        } else {
+            return [row, col]
+        }
+    }
+    return [-1, -1]
+}
+
+
+function searchInSortedMatrix(matrix, target) {
+    for (row in matrix) {
+        for (col in matrix[row]) {
+            if (matrix[row][col] === target) {
+                return [parseInt(row), parseInt(col)]
+            }
+        }
+    }
+    return [-1, -1]
+}
+
 console.log(searchInSortedMatrix(myMatrix, myTarget))
 // Do not edit the line below.
 exports.searchInSortedMatrix = searchInSortedMatrix;
