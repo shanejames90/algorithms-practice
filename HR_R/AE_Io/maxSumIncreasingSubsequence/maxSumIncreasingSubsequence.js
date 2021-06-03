@@ -1,4 +1,3 @@
-
 function maxSumIncreasingSubsequence(array) {
     const sequences = new Array(array.length)
     const sums = array.map(num => num)
